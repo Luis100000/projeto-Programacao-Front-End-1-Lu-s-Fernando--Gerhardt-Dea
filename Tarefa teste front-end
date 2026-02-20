@@ -3,77 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Currículo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Meu Currículo - Luís Fernando</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 { 
+            color: #333;
+            margin: 15px 0 10px 0;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        p { 
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .about {
+            margin: 25px 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover { 
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <img src="foto.jpg" alt="Foto de Perfil" class="profile-img">
-            <h1>Seu Nome</h1>
-            <p>Desenvolvedor Front-end Júnior</p>
+            <h1>Luís Fernando</h1>
         </header>
         
         <section class="about">
             <h2>Sobre Mim</h2>
-            <p>Um pequeno parágrafo sobre sua trajetória profissional...</p>
+            <p>Quero aprender a programar e me desenvolver na área de tecnologia.</p>
         </section>
 
         <button id="alertBtn">Clique para ver minha meta</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        document.getElementById('alertBtn').addEventListener('click', function() {
+            alert('Minha meta: Aprender Front-end e criar projetos incríveis!');
+        });
+    </script>
 </body>
 </html>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 500px;
-    text-align: center;
-}
-
-/* Estilização da Imagem */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #007bff;
-    transition: transform 0.3s ease;
-}
-
-.profile-img:hover {
-    transform: scale(1.1);
-}
-
-/* Estilização de Texto */
-h1 { color: #333; }
-p { color: #666; }
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover { background-color: #0056b3; }
-document.getElementById('alertBtn').addEventListener('click', function() {
-    alert('Minha meta: Aprender Front-end e criar projetos incríveis!');
-});
-
-
-
-
